@@ -9,28 +9,45 @@ The robot model was created from scratch using the URDF format, which requires t
 There are three ROS packages: bot_description, bot_gazebo, bot_control. The package bot_description contains the URDF file corresponding to the model of the robot and its respective launch file, while the bot_gazebo package contains the world files, which are related to the simulation environment in which you will spawn your robot, and its respective launch files.
 
 Once the simulation is running, I used a subscriber node called joints1_2_subscriber to listen to the topics showed below and obtain the data of the joint angle at current time. 
-–	/bot/joint1_position_controller/state
-–	/bot/joint2_position_controller/state 
+*	/bot/joint1_position_controller/state
+*	/bot/joint2_position_controller/state 
 
 The python file created is called joint_subscriber.py and it is launched with the joint_data.launch file. The angles’ data is saved in a text file, which is read by the python script ROS_plots,py to plot the angle trajectories using the matplotlib library. The different set of values used in the simulations are described in the Table below.
 
 +--------------+-----------------+-----------------+-----------------+-----------------+
+
 |  Parameters  | Set of values 1 | Set of values 2 | Set of values 3 | Set of values 4 |
+
 +--------------+-----------------+-----------------+-----------------+-----------------+
+
 | height       |        2        |        2        |        4        |        4        |
+
 +--------------+-----------------+-----------------+-----------------+-----------------+
+
 | height 1     |        1        |        1        |        2        |        1        |
+
 +--------------+-----------------+-----------------+-----------------+-----------------+
+
 | height 2     |        1        |        1        |        2        |        1        |
+
 +--------------+-----------------+-----------------+-----------------+-----------------+
+
 | mass 1       |        1        |        1        |        1        |        1        |
+
 +--------------+-----------------+-----------------+-----------------+-----------------+
+
 | mass 2       |        1        |        3        |        1        |        1        |
+
 +--------------+-----------------+-----------------+-----------------+-----------------+
+
 | init angle 1 |        0        |        0        |        0        |       pi/2      |
+
 +--------------+-----------------+-----------------+-----------------+-----------------+
+
 | init angle 2 |        0        |        0        |        0        |        0        |
+
 +--------------+-----------------+-----------------+-----------------+-----------------+
+
 
 ## Results
 
