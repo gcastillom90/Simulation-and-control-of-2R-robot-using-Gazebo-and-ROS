@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot name="bot_gazebo_model" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Link1 -->
+    <gazebo reference="baselink">
+      <material>Gazebo/Blank</material>
+    </gazebo>
+
+    <!-- Link2 -->
+    <gazebo reference="link1">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+      <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <!-- Link3 -->
+    <gazebo reference="link2">
+      <mu1>0.2</mu1>
+      <mu2>0.2</mu2>
+      <material>Gazebo/Orange</material>
+    </gazebo>
+
+  <!-- ros_control plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/bot</robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>  
+
+
+</robot>

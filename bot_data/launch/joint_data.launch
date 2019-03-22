@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="bot_data" type="joint_subscriber.py" name="joints1_2_subscriber"  output="screen">
+  </node>
+</launch>
