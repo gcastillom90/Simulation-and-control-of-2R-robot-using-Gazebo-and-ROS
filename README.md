@@ -1,6 +1,6 @@
 # Simulation  of 2R robot using Gazebo and ROS
 
-A 2R robot is simulated using Gazebo and ROS considering different values of height and mass for each robot's link and different initial of the joints. The dynamic behavior of the robot and its response to grabity is analized for each different setup of kinematic and dynamic conditions.
+A 2R robot is simulated using Gazebo and ROS considering different values of height and mass for each robot's link and different initial of the joints. The dynamic behavior of the robot and its response to gravity is analized for each different setup of kinematic and dynamic conditions.
 
 ## Simulation setup and files
 
