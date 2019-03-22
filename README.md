@@ -1,6 +1,6 @@
-# Simulation of 2R planar manipulator using Gazebo and ROS
+# Simulation of 2R planar robot using Gazebo and ROS
 
-A 2R planar manipulator robot is simulated using Gazebo and ROS considering different values of height and mass for each robot's link and different initial position of the joints. The dynamic behavior of the robot and its response to gravity is analyzed for each different setup of kinematic and dynamic conditions.
+A 2R planar robot is simulated using Gazebo and ROS considering different values of height and mass for each robot's link and different initial position of the joints. The dynamic behavior of the robot and its response to gravity is analyzed for each different setup of kinematic and dynamic conditions.
 
 ## Simulation setup and files
 
